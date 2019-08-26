@@ -1,0 +1,44 @@
+.divAlignment
+{
+
+    padding-left:300px;
+}
+
+.divAlignments
+{
+    border: 1px;
+    border-style: dotted;
+    border-color: red;
+}
+
+
+.divAlignments1
+{
+    border: 1px;
+    border-style: dotted;
+    border-color: blue;
+}
+
+.divAlignments2
+{
+    border: 1px;
+    border-style: dotted;
+    border-color: green;
+}
+
+.divAlignments3
+{
+    border: 1px;
+    border-style: dotted;
+    border-color:yellow;
+}
+.btnAlignmnet
+{
+
+    padding-left:430px;
+}
+
+.controlWidth
+{
+    width:50%;
+}

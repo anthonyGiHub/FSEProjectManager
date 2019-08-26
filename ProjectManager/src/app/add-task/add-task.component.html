@@ -1,0 +1,241 @@
+<form #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="User_ID" [(ngModel)]="service.formTasks.User_ID" #User_ID="ngModel">
+    <input type="hidden" name="Project_ID" [(ngModel)]="service.formTasks.Project_ID" #Project_ID="ngModel">
+    <input type="hidden" name="Parent_ID" [(ngModel)]="service.formTasks.Parent_ID" #Parent_ID="ngModel">
+    <input type="hidden" name="Task_ID" [(ngModel)]="service.formTasks.Task_ID" #Task_ID="ngModel">
+    <input type="hidden" name="Status" [(ngModel)]="service.formTasks.Status" #Status="ngModel">
+  <div class="form-group row">
+    <div class="col-sm-2">
+      <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">Project:</label>
+    </div>
+    <div class="row col-sm-5">
+      <div class="col-sm-9">
+          <div class="form-group">
+              <input type="text" name="searchProject" [(ngModel)]="service.searchProject" placeholder="Search..." class="form-control"
+              style="width: 100%;">          
+          </div>
+      </div>
+
+      <div class="col-sm-3">     
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+  <div id="tblProject" class="form-group row" >
+      <table id="ProjectTable" style="width:100%">
+          <tr *ngFor="let project of service.filteredProjects" style="width:100%">
+            <td style="width:100%">
+          <tr style="width:100%;">
+            <td style="width:90%;padding-left: 130px;"><input type="text"  style="width:90%;"name="Project" value="{{project.Project1}}"></td>
+            <td style="width:10%"> <button type="button" (click)="SelectProject(project)" class="btn btn-lg" style="width: 100%">Select</button></td>
+          </tr>
+          <hr>
+          </td>
+      
+      </tr>
+      </table>
+      </div>
+      
+
+  <div  id="tasks" class="form-group row">
+    <div class="col-sm-2">
+      <div class="form-group">
+          <label class="col-sm-1 col-form-label" style="padding-left: 200px;" >Task:</label>
+        <!-- <label>Project</label> -->
+      </div>
+    </div>
+    <div class="col-sm-5">
+        <div class="form-group">
+        <input name="Task1" [(ngModel)]="service.formTasks.Task1" #Task1="ngModel" class="form-control" required style="width: 95%">
+        <div class="validation-error" *ngIf="Task1.invalid && Task1.touched"> This field is required</div>
+        </div>
+      <!-- <input type="text" id="txtTask2" style="width: 95%"> -->
+    </div>
+    <div class="col-sm-5">
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <div class="col-sm-2">
+    </div>
+    <div class="row col-sm-4">
+      <div class="col-sm-6">
+        <div id="isParentCheck" class="form-group">
+          <input type="checkbox" id="parentTask" (change)="changed($event)" name="parentTask">Parent Task</div>
+      </div>
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+    <div class="col-sm-5">
+    </div>
+  </div>
+
+  <div id="priority" class="form-group row">
+    <div class="col-sm-2">
+        <div class="form-group">
+            <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">Priority:</label>     
+        </div>    
+    </div>
+    <div class="col-sm-5">
+        <div class="form-group">
+        <input type="range"  name="Priority" [(ngModel)]="service.formTasks.Priority" #Priority="ngModel" class="form-control" style="width: 95%">
+        </div>
+      <div class="col-sm-5">
+      </div>
+    </div>
+  </div>
+
+  <div id="prntTasks" class="form-group row">
+    <div class="col-sm-2">
+      <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">Parent Task:</label>
+    </div>
+    <div class="row col-sm-5">
+      <div class="col-sm-9">
+          <div class="form-group">
+              <input type="text" name="searchParentTask" [(ngModel)]="service.searchParentTask" placeholder="Search..." class="form-control"
+              style="width: 100%;">          
+          </div>
+      </div>
+
+      <div class="col-sm-3">     
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+  <div id="tblParentTask" class="form-group row" >
+    <table id="ParentTaskTable" style="width:100%">
+        <tr *ngFor="let task of service.filteredParentTask" style="width:100%">
+          <td style="width:100%">
+        <tr style="width:100%;">
+          <td style="width:90%;padding-left: 130px;"><input type="text"  style="width:90%;"name="ParentTask" value="{{task.Parent_Task}}"></td>
+          <td style="width:10%"> <button type="button" (click)="SelectParentTask(task)" class="btn btn-lg" style="width: 100%">Select</button></td>
+        </tr>
+        <hr>
+        </td>
+    
+    </tr>
+    </table>
+    </div>
+
+  <div id="dates" class="form-group row">
+    <div class="col-sm-2">
+      <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">StartDate:</label>
+    </div>
+    <div class="row col-sm-2">
+      <div class="col-sm-12">
+          <!-- <div class="form-group" *ngIf="service.Task"> -->
+              <div class="form-group">
+           
+              <input name="Start_Date" type="date" [(ngModel)]="service.formTasks.Start_Date" #Start_Date="ngModel" class="form-control" style="width: 100%">
+              <!-- <input name="StartDate" type="date" [(ngModel)]="service.formProject.StartDate" #StartDate="ngModel" class="form-control" style="width: 90%"> -->
+
+          </div>
+      </div>
+    </div>
+       <div class="col-sm-1">
+        <label  class="col-sm-1 col-form-label" style="padding-left: 75px;">EndDate:</label>
+      </div>
+      <div class="row col-sm-2">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <!-- <div class="form-group" *ngIf="service.Task"> -->
+                <input name="End_Date" type="date" [(ngModel)]="service.formTasks.End_Date" #End_Date="ngModel" class="form-control" style="width: 100%">
+                
+            </div>
+        </div>
+      </div>
+  </div> 
+  
+
+  
+ 
+  <div class="form-group row">
+    <div class="col-sm-2">
+      <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">User:</label>
+    </div>
+    <div class="row col-sm-5">
+      <div class="col-sm-9">
+          <div class="form-group">
+              <input type="text" name="searchTerm" [(ngModel)]="service.searchTerm" placeholder="Search..." class="form-control"
+              style="width: 100%;">          
+          </div>
+      </div>
+
+      <div class="col-sm-3">     
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <div id="tblManagerRole" class="form-group row" >
+      <table id="managerTable" style="width:100%">
+          <tr *ngFor="let usr of service.filteredUsers" style="width:100%">
+            <td style="width:100%">
+          <tr style="width:100%;">
+            <td style="width:90%;padding-left: 130px;"><input type="text"  style="width:90%;"name="FirstName" value="{{usr.FirstName}}"></td>
+            <td style="width:10%"> <button type="button" (click)="SelectUser(usr)" class="btn btn-lg" style="width: 100%">Select</button></td>
+          </tr>
+          <tr  style="width:100%"> 
+            <td style="width:90%;padding-left: 130px;"><input type="text" style="width:90%;" name="LastName" value="{{usr.LastName}}"></td>
+            <td style="width:10%">
+              <!-- <button (click)="DeleteUsers(usr.User_ID)" class="btn btn-lg">Delete</button> -->
+            </td>
+      
+          </tr>
+          <tr  style="width:100%">
+            <td style="width:90%;padding-left: 130px;"><input type="text" style="width:90%;" name="LastName" value="{{usr.Employee_ID}}"></td>
+            <td style="width:10%">
+              </td>
+          
+          </tr>
+          <hr>
+          </td>
+      
+      </tr>
+      </table>
+      </div>
+      
+
+  
+  <div class="form-group row">
+      <div class="col-sm-2">
+  
+      </div>
+      <div class="row col-sm-5">
+  
+  
+  
+        <div class="col-sm-6">
+  
+        </div>
+        <div class="col-sm-3">
+          <button id="btnSubmit" type="submit" style="float: right;width:90%">Add</button>
+        </div>
+  
+        <div class="col-sm-3">
+          <button id="btnReset" type="reset" style="float: right;width:90%">Reset</button>
+        </div>
+  
+      </div>
+  
+      <div class="col-sm-2">
+      </div>
+  
+  
+    </div>
+  <!-- <div class="form-group row btnAlignmnet">
+    <input type="submit" value="Submit">
+
+  </div> -->
+
+</form>

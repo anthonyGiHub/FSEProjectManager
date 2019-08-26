@@ -1,0 +1,163 @@
+<form #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="User_ID" [(ngModel)]="service.formProject.User_ID" #User_ID="ngModel">
+    <input type="hidden" name="Project_ID" [(ngModel)]="service.formProject.Project_ID" #Project_ID="ngModel">
+  <div class="form-group row">
+    <div class="col-sm-2">
+      <div class="form-group">
+          <label class="col-sm-1 col-form-label" style="padding-left: 200px;" >Project:</label>
+        <!-- <label>Project</label> -->
+      </div>
+    </div>
+    <div class="col-sm-5">
+        <div class="form-group">
+        <input name="Project1" [(ngModel)]="service.formProject.Project1" #Project1="ngModel" class="form-control" required style="width: 95%">
+        <div class="validation-error" *ngIf="Project1.invalid && Project1.touched"> This field is required</div>
+        </div>
+      <!-- <input type="text" id="txtTask2" style="width: 95%"> -->
+    </div>
+    <div class="col-sm-5">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="row col-sm-5">
+
+      <div class="col-sm-6">
+          <div class="form-group">
+        
+        <!-- <input type="checkbox" id="rangePriority"> Set Start Date and End Date</div> -->
+        <input type="checkbox" (change)="changed($event)" name="IsActive" [(ngModel)]="IsActive">Set Start and End Date</div>
+      
+      </div>
+
+
+      <div class="col-sm-3"> 
+          <input name="StartDate" type="date" [(ngModel)]="service.formProject.StartDate" #StartDate="ngModel" class="form-control" style="width: 90%">
+        <!-- <button id="btnSubmit" type="submit" [(ngModel)]="IsActive" style="width: 90%">Start Date</button> -->
+      </div>
+
+      <div class="col-sm-3">
+          <input name="EndDate" type="date" [(ngModel)]="service.formProject.EndDate" #EndDate="ngModel" class="form-control" style="float: right;width: 90%">
+        <!-- <button id="btnEndDate" type="submit" style="float: right;width: 90%">End Date</button> -->
+      </div>
+
+    </div>
+
+    <div class="col-sm-5">
+    </div>
+
+
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-2">
+        <div class="form-group">
+            <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">Priority:</label>     
+        </div>    
+    </div>
+    <div class="col-sm-5">
+        <div class="form-group">
+        <input type="range"  name="Priority" [(ngModel)]="service.formProject.Priority" #Priority="ngModel" class="form-control" style="width: 95%">
+        </div>
+      <!-- <input type="range" id="rangePriority" style="width: 90%"> -->
+      <div class="col-sm-5">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-2">
+      <label  class="col-sm-1 col-form-label" style="padding-left: 200px;">Manager:</label>
+    </div>
+    <div class="row col-sm-5">
+      <div class="col-sm-9">
+          <div class="form-group">
+              <input type="text" name="searchTerm" [(ngModel)]="service.searchTerm" placeholder="Search..." class="form-control"
+              style="width: 100%;">
+              <!-- <input name="User_ID" [(ngModel)]="service.formUser.User_ID" #User_ID="ngModel" class="form-control" style="width: 100%"> -->
+        <!-- <input type="text" id="txtTask2" style="width: 100%"> -->
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+
+        <!-- <div class="modal" id="searchModal">
+          <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <button class="close" data-dismiss="modal">&times;</button>
+                 <h4 class="modal-title">SearchManager</h4>
+               </div>
+             </div>
+          </div>
+
+        </div> -->
+
+        <!-- <button id="btnSearch" type="submit" style="float: right;width:90%">Search</button> -->
+
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+<!-- filteredusers Start -->
+<div id="tblManagerRole" class="form-group row" >
+<table id="managerTable" style="width:100%">
+    <tr *ngFor="let usr of service.filteredUsers" style="width:100%">
+      <td style="width:100%">
+    <tr style="width:100%;">
+      <td style="width:90%;padding-left: 130px;"><input type="text"  style="width:90%;"name="FirstName" value="{{usr.FirstName}}"></td>
+      <td style="width:10%"> <button type="button" (click)="SelectUser(usr)" class="btn btn-lg" style="width: 100%">Select</button></td>
+    </tr>
+    <tr  style="width:100%"> 
+      <td style="width:90%;padding-left: 130px;"><input type="text" style="width:90%;" name="LastName" value="{{usr.LastName}}"></td>
+      <td style="width:10%">
+        <!-- <button (click)="DeleteUsers(usr.User_ID)" class="btn btn-lg">Delete</button> -->
+      </td>
+
+    </tr>
+    <tr  style="width:100%">
+      <td style="width:90%;padding-left: 130px;"><input type="text" style="width:90%;" name="LastName" value="{{usr.Employee_ID}}"></td>
+      <td style="width:10%">
+        </td>
+    
+    </tr>
+    <hr>
+    </td>
+
+</tr>
+</table>
+</div>
+
+<!-- end -->
+
+  <div class="form-group row">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="row col-sm-5">
+
+
+
+      <div class="col-sm-6">
+
+      </div>
+      <div id="btnAdd" class="col-sm-3">
+        <button id="btnSubmit" type="submit" style="float: right;width:90%">Add</button>
+      </div>
+
+      <div class="col-sm-3">
+        <button id="btnReset" type="reset" style="float: right;width:90%" >Reset</button>
+      </div>
+
+    </div>
+
+    <div class="col-sm-2">
+    </div>
+
+
+  </div>
+</form>

@@ -1,0 +1,91 @@
+<form #form="ngForm">
+  <!-- <button type="submit" class="btn btn-lg btn-block">Search</button> -->
+  <table style="width: 100%">
+    <tr>
+      <table class="table table-hover" style="width: 70%;">
+        <tr style="width:100%">
+          <td style="width: 10%"></td>
+          <td style="width: 30%">
+            <input type="text" name="searchTerm" [(ngModel)]="service.searchTerm" placeholder="Search..." class="form-control"
+              style="width: 100%;">
+          </td>
+          <td style="width: 10%">
+            <label>Sort:</label>
+          </td>
+          <td style="width: 15%">
+            <button (click)="sortUsers('FirstName')" class="btn btn-lg">FirstName</button>
+          </td>
+          <td style="width: 15%">
+            <button (click)="sortUsers('LastName')" class="btn btn-lg">LastName</button>
+          </td>
+          <td style="width: 10%">
+
+            <button (click)="sortUsers('EmployeeID')" class="btn btn-lg">EmployeeID</button>
+          </td>
+
+
+        </tr>
+      </table>
+    </tr>
+    <tr>
+      <table style="width:100%">
+        <tr *ngFor="let usr of service.filteredUsers" style="width:100%">
+          <td style="width:100%">
+        <tr style="width:100%;">
+          <td style="width:90%;padding-left: 130px;"><input type="text"  style="width:90%;"name="FirstName" value="{{usr.FirstName}}"></td>
+          <td style="width:10%"> <button (click)="PopulateUsers(usr)" class="btn btn-lg" style="width: 100%">Edit</button></td>
+        </tr>
+        <tr  style="width:100%"> 
+          <td style="width:90%;padding-left: 130px;"><input type="text" style="width:90%;" name="LastName" value="{{usr.LastName}}"></td>
+          <td style="width:10%">
+            <button (click)="DeleteUsers(usr.User_ID)" class="btn btn-lg">Delete</button>
+            <!-- <button (click)="DeleteUsers(usr)" class="btn btn-lg">Delete</button> -->
+          </td>
+
+        </tr>
+        <tr  style="width:100%">
+          <td style="width:90%;padding-left: 130px;"><input type="text" style="width:90%;" name="LastName" value="{{usr.Employee_ID}}"></td>
+          <td style="width:10%">
+            </td>
+        
+        </tr>
+        <hr>
+        </td>
+
+    </tr>
+  </table>
+    </tr>
+  </table>
+
+</form>
+
+
+<!-- <form #form="ngForm">
+   
+<table class="table table-hover formListAlignment" style="width: 100%"> 
+  <tr style="width:100%">
+     <td >
+        <input type="text" name="searchTerm" [(ngModel)]="service.searchTerm" placeholder="Search..." class="form-control" style="width: 15%">
+     </td>
+     <td>
+       
+     </td>
+        <label>Sort:</label>
+        <button (click)="sortUsers('FirstName')" class="btn btn-lg">FirstName</button>
+        <button (click)="sortUsers('LastName')" class="btn btn-lg">LastName</button>
+        <button (click)="sortUsers('EmployeeID')" class="btn btn-lg">EmployeeID</button>
+     </td>
+  </tr>
+<tr *ngFor="let usr of service.filteredUsers" style="width:100%">
+  <td>{{usr.FirstName}}</td>
+  <td>{{usr.LastName}}</td>
+    <td>{{usr.Employee_ID}}</td>
+    <button (click)="PopulateUsers(usr)" class="btn btn-lg">Edit</button>
+    <button (click)="DeleteUsers(usr.User_ID)" class="btn btn-lg">Delete</button>
+</tr>
+
+
+</table>
+
+
+</form> -->
