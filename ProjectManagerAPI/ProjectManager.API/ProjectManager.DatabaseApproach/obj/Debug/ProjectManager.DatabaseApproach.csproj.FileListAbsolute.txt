@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\ProjectManager.DatabaseApproach.dll.config
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\ProjectManager.DatabaseApproach.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\ProjectManager.DatabaseApproach.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\obj\Debug\ProjectManager.DatabaseApproach.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\obj\Debug\ProjectManager.DatabaseApproach.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DatabaseApproach\obj\Debug\ProjectManager.DatabaseApproach.csprojResolveAssemblyReference.cache

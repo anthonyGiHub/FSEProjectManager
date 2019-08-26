@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.BusinessAccessLayer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.BusinessAccessLayer.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.DataAccessLayer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.Entities.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\EntityFramework.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.DataAccessLayer.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.DataAccessLayer.dll.config
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.Entities.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\ProjectManager.Entities.dll.config
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\bin\Release\EntityFramework.xml
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\obj\Release\ProjectManager.BusinessAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\obj\Release\ProjectManager.BusinessAccessLayer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.BusinessAccessLayer\obj\Release\ProjectManager.BusinessAccessLayer.pdb

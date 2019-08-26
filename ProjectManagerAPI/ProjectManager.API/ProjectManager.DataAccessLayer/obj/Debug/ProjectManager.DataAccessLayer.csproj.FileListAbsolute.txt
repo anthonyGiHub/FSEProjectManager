@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.dll.config
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.Entities.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.Entities.pdb
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.Entities.dll.config
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\obj\Debug\ProjectManager.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\obj\Debug\ProjectManager.DataAccessLayer.dll
+C:\Users\Admin\Desktop\FinalSBU\ProjectManagerAPI\ProjectManager.API\ProjectManager.DataAccessLayer\obj\Debug\ProjectManager.DataAccessLayer.pdb
